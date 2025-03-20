@@ -1,0 +1,21 @@
+Operator Precedence: No need to memorize that table, just use brackets!!!
+
+Variable Scoping:
+
+	1. If a variable is defined in a block then
+		a. it is available in the same block
+		b. it is available to any block which is created inside this block
+		c. not available outside the block
+
+	2. 	int i = 4;
+		for(int i = 0; i <= 5; i++){
+			cout << "HI" << endl;
+		} // here for will not use the definition of i which is outside, instead it will use the definition which is inside the braces of the for clause
+
+		for(; i >= 2; i--){
+			cout << "Hi" << endl;
+		} // for will use the definition of i which is outside
+
+	3. If a variable is defined in a block, and then it is used, then the definition inside the block will be used. Otherwise if the variable is not defined in the block then it will search for the definition outside the block i.e. in the parent block
+
+	4. Multiple declarations of same variable not allowed
