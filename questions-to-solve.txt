@@ -1,0 +1,2 @@
+1. Two sum: learn hash map and re-solve this question
+2. 1207: Unique Number of Occurences: use hash map
